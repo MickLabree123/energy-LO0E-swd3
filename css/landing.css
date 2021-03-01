@@ -8,9 +8,6 @@
         display: flex;
         flex-direction: row;
     }
-    .item-mobile-logo {
-        
-    }
 }
 
 @media only screen and (min-width: 768px) {
