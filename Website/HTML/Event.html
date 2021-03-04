@@ -1,0 +1,75 @@
+<html lang="NL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="language" content="NL"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="energydrink">
+    <meta name="author" content="sathyam, Anayawa, Max, Mick">
+    <meta name="keywords" content="Rock hard, energy, drink, event">
+    <title>Rock Hard</title>
+    <link rel="stylesheet" type="text/css" href="..\CSS\Event.css">
+</head>
+<body>
+  
+ 
+
+<section id="EventZoeken">
+    <div class="row">
+      <div class="left" style="background-color:#bbb;">
+        <h2>Alle evenementen</h2>
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="loactie">
+        <ul id="Locatie">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">jQuery</a></li>
+          <li><a href="#">SQL</a></li>
+          <li><a href="#">Bootstrap</a></li>
+          <li><a href="#">Node.js</a></li>
+        </ul>
+      </div>
+      
+      <div class="right" style="background-color:#ddd;">
+        <h2>Page Content</h2>
+        <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+        <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+        <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+        <p>Some text..</p>
+      </div>
+    </div>
+</section>   
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+        
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("Locatie");
+          li = ul.getElementsByTagName("li");
+        
+    
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+
+
+
+
+
+</body>
+</html>
