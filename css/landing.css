@@ -7,11 +7,14 @@
     .header-button {
         display: none;
     }
-}
 
+    #header {
+        display: flex;
+    }
+
+}
 @media only screen and (min-width: 768px) {
     .hamburger-icon {
         display: none;
     }
-
 }
