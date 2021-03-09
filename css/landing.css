@@ -14,6 +14,10 @@
         left: 85vw;
         top: 1vh;
     }
+    .hamburger-icon:hover {
+        cursor: pointer;
+    }
+
     .buttons {
         display: none;
     }
@@ -21,17 +25,25 @@
         position: relative;
         top: 10vh;
     }
+
+    .slideshow_img {
+        width: 100vw;
+        height: 28vh;
+        position: relative;
+        top: 12vh;
+    }
+
     #about-energy {
         position: relative;
-        top: 40vh;
+        top: 15vh;
     }
     #ingredienten-energy {
         position: relative;
-        top: 40vh;
+        top: 15vh;
     }
     #footer {
         position: relative;
-        top: 40vh;
+        top: 15vh;
     }
 }
 @media only screen and (min-width: 768px) {
