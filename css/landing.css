@@ -10,6 +10,19 @@
 
     #header {
         display: flex;
+        justify-content: space-around;
+        flex-grow: 10;
+    }
+
+    .logo {
+        align-self: flex-start;
+        order: 1;
+    }
+
+    .dropdown-icon {
+        font-size: 3.5rem;
+        align-self: center;
+        order: 9;
     }
 
 }
