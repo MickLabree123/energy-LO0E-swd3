@@ -11,36 +11,27 @@ body{
 @media screen and (min-width: 769px) {
 
 
-
+    
 #EventZoeken {
     box-sizing: border-box;
-  
 }
-      
-  
 
-.row {
+.Evenementen {
     display: flex;
 }
-
 .left {
+    background-color:rgb(209, 9, 9);
     flex: 35%;
     padding: 15px 0;
-}
-  
-.left h2 {
-    padding-left: 8px;
-}
-  
+} 
+
 .right {
+    background-color:rgb(86, 231, 1);
     flex: 65%;
+
     padding: 15px;
 
 }
-
-
-
-
 
 #mySearch {
     width: 100%;
@@ -48,22 +39,17 @@ body{
     padding: 11px;
     border: 1px solid rgb(4, 115, 143);
 }
-  
- 
 #Locatie {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-  
-
 #Locatie li a {
     padding: 12px;
     text-decoration: none;
     color: black;
     display: block
 }
-  
 #Locatie li a:hover {
     background-color: #eee;
 }
@@ -72,29 +58,55 @@ body{
 
 
 
+
+
+.OverEvenement {
+    width: 0%;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .OverEvenement-text {
+    position: relative;
+    top: 20%;
+    width: 90%;
+    
+    margin-top: 3vh;
+  }
+  .OverEvenement a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .OverEvenement a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .OverEvenement .closebtn {
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 80px;
+  }
+
+
+
+
+
+
+
+
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 100px) and (max-width:768.9px) {
-
-
-
 
 
 
