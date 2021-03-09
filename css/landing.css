@@ -4,27 +4,35 @@
 }
 
 @media only screen and (max-width: 767.9px) {    
-    .header-button {
+    .logo {
+        position: absolute;
+        margin-left: 37vw;
+    }
+    .hamburger-icon {
+        font-size: 3rem;
+        position: relative;
+        left: 85vw;
+        top: 1vh;
+    }
+    .buttons {
         display: none;
     }
-
-    #header {
-        display: flex;
-        justify-content: space-around;
-        flex-grow: 10;
+    #mid-1 {
+        position: relative;
+        top: 10vh;
     }
-
-    .logo {
-        align-self: flex-start;
-        order: 1;
+    #about-energy {
+        position: relative;
+        top: 40vh;
     }
-
-    .dropdown-icon {
-        font-size: 3.5rem;
-        align-self: center;
-        order: 9;
+    #ingredienten-energy {
+        position: relative;
+        top: 40vh;
     }
-
+    #footer {
+        position: relative;
+        top: 40vh;
+    }
 }
 @media only screen and (min-width: 768px) {
     .hamburger-icon {
