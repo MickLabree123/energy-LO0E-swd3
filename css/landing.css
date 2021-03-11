@@ -42,6 +42,10 @@
     /* main */
 
     /* footer */
+    #homepage-footer {
+        display: flex;
+        flex-direction: row;
+    }
     .homepage-socialMediaLink ul li{
         list-style: none;
     }
