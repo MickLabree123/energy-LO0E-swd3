@@ -1,50 +1,51 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 @media only screen and (max-width: 767.9px) {    
-    .logo {
-        position: absolute;
-        margin-left: 37vw;
+    body {
+        width: 90vw;
+        margin: auto;
     }
-    .hamburger-icon {
-        font-size: 3rem;
-        position: relative;
-        left: 85vw;
-        top: 1vh;
+    /* header */
+    #homepage-header {
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
-    .hamburger-icon:hover {
+    .homepage-logo {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .homepage-logo img {
+        align-self: flex-start;
+    }
+
+    .homepage-dropDownIcon {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .homepage-dropDownIcon p{
+        align-self: flex-end;
+        font-size: 3.5rem;
+    }
+    .homepage-dropDownIcon p:hover {
+        color: khaki;
         cursor: pointer;
     }
+    /* main */
 
-    .buttons {
-        display: none;
-    }
-    #mid-1 {
-        position: relative;
-        top: 10vh;
+    /* footer */
+    .homepage-socialMediaLink ul li{
+        list-style: none;
     }
 
-    .slideshow_img {
-        width: 100vw;
-        height: 28vh;
-        position: relative;
-        top: 12vh;
-    }
-
-    #about-energy {
-        position: relative;
-        top: 15vh;
-    }
-    #ingredienten-energy {
-        position: relative;
-        top: 15vh;
-    }
-    #footer {
-        position: relative;
-        top: 15vh;
-    }
 }
 @media only screen and (min-width: 768px) {
     .hamburger-icon {
