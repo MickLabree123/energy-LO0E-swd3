@@ -45,9 +45,40 @@
     #homepage-footer {
         display: flex;
         flex-direction: row;
+        align-items:flex-end;
+        justify-content: space-between;
+        height: 20vh;
     }
+    #socialMedia-homepage{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homepageEventLink a{
+        position: absolute;
+        bottom: -24vh;
+        left: 6vw;
+        font-size: 1.6rem;
+        list-style: none;
+        text-decoration: none;
+        color: #3f48cc;
+    }
+
     .homepage-socialMediaLink ul li{
         list-style: none;
+        font-size: 1.6rem;
+        margin: 2vw;
+    }
+    .homepage-socialMediaLink a {
+        text-decoration: none;
+        color: #3f48cc;
+    }
+
+    .homepage-socialLinkList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
     }
 
 }
