@@ -28,7 +28,7 @@ body{
 .right {
     background-color:rgb(86, 231, 1);
     flex: 65%;
-
+    width: 0%;
     padding: 15px;
 
 }
@@ -55,11 +55,7 @@ body{
 }
 
 
-
-
-
-
-
+.InfoOverEvenement{width: 0%;}
 .OverEvenement {
     width: 0%;
     position: relative;
