@@ -13,7 +13,7 @@
     #homepage-header {
         height: 15vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
     }
@@ -24,6 +24,9 @@
     }
     .homepage-logo img {
         align-self: flex-start;
+        position: absolute;
+        right: 5vw;
+        top: 2vh;
     }
 
     .homepage-dropDownIcon {
@@ -34,6 +37,9 @@
     .homepage-dropDownIcon p{
         align-self: flex-end;
         font-size: 3.5rem;
+        position: absolute;
+        top: 2vh;
+        left: 5vw;
     }
     .homepage-dropDownIcon p:hover {
         color: khaki;
