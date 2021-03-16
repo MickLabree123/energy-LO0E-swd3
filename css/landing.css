@@ -41,6 +41,12 @@
     }
     /* main */
 
+    /* slideshow */
+    #slideShow {
+        width: 90vw; 
+        height: 20vh; 
+        background-size: cover;
+    }
     /* footer */
     #homepage-footer {
         display: flex;
@@ -81,9 +87,46 @@
         align-content: space-around;
     }
 
-}
-@media only screen and (min-width: 768px) {
-    .hamburger-icon {
+    /* display none */
+    .homepage-webNav {
         display: none;
     }
+}
+@media only screen and (min-width: 768px) {
+    body {
+        width: 90vw;
+        margin: auto;
+    }
+    /* header */
+    #homepage-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .homepage-logo {
+        margin-left: 3vw;
+    }
+    .homepage-webNav {
+        margin-right: 3vw;
+    } 
+    .homepage-dropDownIcon {
+        display: none;
+    }
+    
+    /* main */
+    #main-homepage {
+        display: flex;
+        flex-direction: row;
+    }
+    #wieIsRockHard {
+        width: 45vw;
+    }
+    /* slideshow */
+    #slideShow {
+        width: 45vw; 
+        height: 20vh; 
+        background-size: cover;
+    }
+
 }
