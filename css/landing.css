@@ -123,8 +123,7 @@
     .homepage-logo {
         margin-left: 3vw;
     }
-    .homepage-webNav {
-    } 
+    
     .homepage-webNav button{
         font-size: 1.3rem;
         background-color: white;
@@ -219,9 +218,7 @@
         text-decoration: none;
         color: black;
     }
-    .homepageEventLink {
-        
-    }
+    
     #socialMedia-homepage ul {
         list-style: none;
         display: flex;
