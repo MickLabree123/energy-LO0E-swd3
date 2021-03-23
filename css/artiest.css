@@ -1,6 +1,30 @@
+@media only screen and (min-width: 768px) {
+
+* {
+    width: 90;
+}
+
 .artiest1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.section1 {
     height: 10vh;
-    width: 30vw;
+    width: 25vw;
     background-color: antiquewhite;
-    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artiest-fotos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.artiest-fotos img {
+    width: 25vw;
+}
 }
