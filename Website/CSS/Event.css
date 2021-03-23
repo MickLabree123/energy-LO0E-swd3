@@ -24,7 +24,6 @@ body{
     flex: 35%;
     padding: 15px 0;
 } 
-
 .right {
     background-color:rgb(86, 231, 1);
     flex: 65%;
@@ -47,12 +46,18 @@ body{
 #Locatie li a {
     padding: 12px;
     text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: medium;
     color: black;
+    
     display: block
 }
 #Locatie li a:hover {
     background-color: #eee;
 }
+
+
 
 
 .InfoOverEvenement{width: 0%;}
@@ -98,7 +103,6 @@ body{
 
 
 }
-
 
 
 

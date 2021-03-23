@@ -10,8 +10,18 @@
     <link rel="stylesheet" type="text/css" href="..\CSS\Event.css">
     <script src="..\JavaScript\Event.js"></script>
     <script src="..\Website\energy.sql"></script>
+    <!-- google fonts -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<style> 
+<?php include "..\CSS\Event.css"; ?>
+</style>
+
+
 
 <?php
 $host = "localhost";
@@ -96,18 +106,16 @@ if ($result = $conn->query($locatie08)){
 /* Locatie 9 */
 if ($result = $conn->query($locatie09)){
   while ($row = $result->fetch_array()){
-    $locatie9 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie9 = "<section class= locatie>".$row[0]." . ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 10 */
 if ($result = $conn->query($locatie010)){
   while ($row = $result->fetch_array()){
-    $locatie10 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie10 = $row[0]." . ".$row[1];
   } $result->close();
 } else { echo"verlopen";}
-
-
 
 
 
@@ -116,12 +124,6 @@ if ($result = $conn->query($locatie010)){
 ?>
 
 
-
-<style>
-.qwerty{
-  background-color: cyan;
-}
-</style>
 
 
 
