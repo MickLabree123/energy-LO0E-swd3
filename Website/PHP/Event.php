@@ -129,8 +129,6 @@ if ($result = $conn->query($locatie010)){
 
 
 
-
-
 <section id="EventZoeken"></section>
 
 <section class="Evenementen">
