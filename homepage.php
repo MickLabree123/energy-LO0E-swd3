@@ -24,6 +24,7 @@
             <img src="img/LOGO.png" height="100" alt="logo van rockhard energy">
         </article>
         <article class="homepage-webNav">
+            <a href="homepage.php"><button>Home</button></a>
             <a href="#"><button>Events</button></a>
             <a href="#"><button>Acties</button></a>
             <a href="artiesten.php"><button>Artiesten</button></a>

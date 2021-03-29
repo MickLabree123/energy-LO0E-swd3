@@ -8,6 +8,7 @@
     body {
         width: 90vw;
         margin: auto;
+
     }
     /* header */
     #homepage-header {
@@ -16,6 +17,7 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
+        background-color: aliceblue;
     }
     .homepage-logo {
         display: flex;
