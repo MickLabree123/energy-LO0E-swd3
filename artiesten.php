@@ -33,6 +33,7 @@
             <a href="homepage.php"><button>Home</button></a>
             <a href="#"><button>Events</button></a>
             <a href="#"><button>Acties</button></a>
+            <a href="artiesten.php"><button>Artiesten</button></a>
             <a href="#"><button>Contact</button></a>
         </article>
         <article class="homepage-dropDownIcon">
