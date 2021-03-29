@@ -125,6 +125,30 @@ if ($result = $conn->query($locatie010)){
 
 
 
+<header id="homepage-header">
+        <article class="homepage-logo">
+            <img src="..\Images\logo.png" height="100" alt="rockhard energy">
+        </article>
+        <article class="homepage-webNav">
+            <a href="homepage.php"><button>Home</button></a>
+            <a href="#"><button>Events</button></a>
+            <a href="#"><button>Acties</button></a>
+            <a href="artiesten.php"><button>Artiesten</button></a>
+            <a href="#"><button>Contact</button></a>
+        </article>
+        <article class="homepage-dropDownIcon">
+            <p id="homepage-dropdown-btn">&#9776;</p>
+        </article>
+        <!-- <div id="dropDown">
+            <p class="dropDown-button">&#9776;</p>
+            <ul class="dropDown">
+                <li>Events</li>
+                <li>Aanbiedingen</li>
+                <li>Contact</li>
+            </ul>
+        </div> -->
+    </header>
+
 
 
 
@@ -167,7 +191,26 @@ if ($result = $conn->query($locatie010)){
 
 
 
-
+<footer id="homepage-footer">
+        <section id="socialMedia-homepage">
+            <nav class="homepageEventLink">
+                <a href="#">Events</a>
+            </nav>
+            <nav class="homepage-socialMediaLink">
+                <ul class="homepage-socialLinkList">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="contact-homepage">
+            <h1>Neem contact op</h1>
+            <p>tel: +31 612345678</p>
+            <p>email: rockhard.contact@gmail.nl</p>
+        </section>
+    </footer>
 
 
 </body>

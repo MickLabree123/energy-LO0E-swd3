@@ -97,12 +97,80 @@ body{
 
 
 
-
-
-
-
-
+/* header */
+#homepage-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
 }
+.homepage-logo {
+    margin-left: 3vw;
+}
+.homepage-webNav button{
+    font-size: 1.3rem;
+    background-color: white;
+    color: #3f48cc;
+    border: none;
+    margin-left: 3vw;
+    background-color: antiquewhite;
+    width: 10vw;
+    height: 9vh;
+    border-radius: 25%;
+    transition: all 100ms;
+}
+.homepage-webNav button:hover {
+    color: antiquewhite;
+    background-color: #3f48cc; 
+    cursor: pointer;
+} 
+.homepage-dropDownIcon {
+    display: none;
+}
+
+/* footer */
+#homepage-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17vh;
+    margin-bottom: 4vh;
+}
+#socialMedia-homepage {
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    justify-content: space-between;
+}
+#socialMedia-homepage a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #3f48cc;
+    transition: all 250ms;
+}
+#socialMedia-homepage a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#socialMedia-homepage ul {
+    list-style: none;
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.homepageEventLink{
+    margin-left: 3vw;
+}
+.contact-homepage{
+    margin-right: 3vw;
+}
+}
+
+
 
 
 
