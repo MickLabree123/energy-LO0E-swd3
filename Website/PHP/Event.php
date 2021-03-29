@@ -153,7 +153,7 @@ if ($result = $conn->query($locatie010)){
 
 
 
-<section id="EventZoeken"></section>
+<section id="EventZoeken">
 
 <section class="Evenementen">
    <div class="left">
@@ -185,11 +185,16 @@ if ($result = $conn->query($locatie010)){
   </article>
 </section>
 
+</section>
 
 
 
 
 
+
+
+
+</body>
 
 <footer id="homepage-footer">
         <section id="socialMedia-homepage">
@@ -213,7 +218,7 @@ if ($result = $conn->query($locatie010)){
     </footer>
 
 
-</body>
+
 </html>
 
 

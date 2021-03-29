@@ -20,15 +20,17 @@ body{
     display: flex;
 }
 .left {
-    background-color:rgb(209, 9, 9);
+    background-color:#3f48cc;
     flex: 35%;
-    padding: 15px 0;
+    padding-bottom: 1vh;
+
 } 
 .right {
-    background-color:rgb(86, 231, 1);
+    background-color:khaki;
     flex: 65%;
     width: 0%;
-    padding: 15px;
+    padding-bottom: 10vh;
+    
 
 }
 
@@ -104,6 +106,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 .homepage-logo {
     margin-left: 3vw;
