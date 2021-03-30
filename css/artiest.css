@@ -47,3 +47,41 @@
     height: 37.5vh;
 }
 }
+
+@media only screen and (max-width: 767.9px) {
+    .headline-tekst {
+        display: flex;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+
+    /* main */
+    .artiest1 {
+        display: flex;
+    }
+
+    .artiest-fotos {
+        display: flex;
+    }
+    .artiest-fotos2 {
+        display: flex;
+    }
+    .artiest-fotos img{
+        width: 30vw;
+    }
+    .artiest-fotos2 img{
+        width: 30vw;
+    }
+
+    .artiest-tekst {
+        width: 30vw;
+        background-color: antiquewhite;
+        margin-top: 3vh;
+    }
+
+    /* footer */
+    .homepageEventLink {
+        position: absolute;
+        top: 70vh;
+    }
+}
