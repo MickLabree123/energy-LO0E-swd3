@@ -70,7 +70,7 @@
 
     <footer id="homepage-footer">
         <section id="socialMedia-homepage">
-            <nav class="homepageEventLink">
+            <nav class="homepageEventlink">
                 <a href="#">Events</a>
             </nav>
             <nav class="homepage-socialMediaLink">
