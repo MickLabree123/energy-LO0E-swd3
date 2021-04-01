@@ -59,7 +59,7 @@
 
     <section class="main-homepage2">
         <section class="homepage-blikjes">
-            <img src="img/5.JPG" alt="blikjes rock hard">
+            <img src="img/5.jpg" style="background-size: cover;" alt="blikjes rock hard">
         </section>
         
         <section id="ingredienten">
