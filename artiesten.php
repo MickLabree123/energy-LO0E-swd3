@@ -83,7 +83,7 @@
     <footer id="homepage-footer">
         <section id="socialMedia-homepage">
             <nav class="homepageEventLink">
-                <a href="#">Events</a>
+                <a class="dreii" href="#">Events</a>
             </nav>
             <nav class="homepage-socialMediaLink">
                 <ul class="homepage-socialLinkList">

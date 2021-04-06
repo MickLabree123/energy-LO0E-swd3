@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- css link -->
-<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" type="text/css" href="css/landing.css">
 <!-- JS link -->
 <script src="JS/landing.js" type="text/javascript"></script>
 </head>
