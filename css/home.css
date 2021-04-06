@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
+    background-color: #84b3e6;
 }
 
 @media only screen and (max-width: 767.9px) {    
@@ -70,8 +71,8 @@
 
     .homepageEventLink a{
         position: absolute;
-        bottom: -20vh;
-        left: 6vw;
+        bottom: -33vh;
+        left: 12vw;
         font-size: 1.6rem;
         list-style: none;
         text-decoration: none;
@@ -114,6 +115,9 @@
         margin: auto;
     }
     /* header */
+
+    
+
     #homepage-header {
         display: flex;
         flex-direction: row;
@@ -128,18 +132,18 @@
     .homepage-webNav button{
         font-size: 1.3rem;
         background-color: white;
-        color: #3f48cc;
+        color: #5591d3;
         border: none;
         margin-left: 3vw;
-        background-color: antiquewhite;
+        background-color: #393D6A;
         width: 10vw;
         height: 9vh;
         border-radius: 25%;
         transition: all 100ms;
     }
     .homepage-webNav button:hover {
-        color: antiquewhite;
-        background-color: #3f48cc; 
+        color: #393D6A;
+        background-color: #5591d3; 
         cursor: pointer;
     } 
     .homepage-dropDownIcon {
@@ -153,11 +157,16 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .main-homepage2 {
+        margin-top: 5vh;
+    }
     .homepage-about-tekst {
         width: 40vw;
     }
     #wieIsRockHard h1{
         font-size: 2rem;
+        color: black;
     }
     #wieIsRockHard h3{
         font-size: 1.8rem;

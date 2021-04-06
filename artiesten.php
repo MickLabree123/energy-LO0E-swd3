@@ -7,8 +7,8 @@
     <meta name="author" content="Anayawa, Mick, Sathyam, Max">
     <meta name="description" content="artiesten van RockHard energy">
     <meta name="keywords" content="energy, drink, rockhard, sports, drink, artiesten">
-    <link rel="stylesheet" href="css/artiest.css">
-    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/artiesten.css">
+    <link rel="stylesheet" href="css/home.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
