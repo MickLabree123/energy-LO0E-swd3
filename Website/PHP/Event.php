@@ -36,7 +36,7 @@ if ($conn->connect_error){
 
 
 /* Alle Locaties */
-$locatie01 = "SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0 ";
+$locatie01 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0 ";
 $locatie02 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 1 ";
 $locatie03 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 2 ";
 $locatie04 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 3 ";
@@ -50,72 +50,102 @@ $locatie010 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 9 ";
 /* Locatie 1 */
 if ($result = $conn->query($locatie01)){
   while ($row = $result->fetch_array()){
-    $locatie1 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie1 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 2 */
 if ($result = $conn->query($locatie02)){
   while ($row = $result->fetch_array()){
-    $locatie2 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie2 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 3 */
 if ($result = $conn->query($locatie03)){
   while ($row = $result->fetch_array()){
-    $locatie3 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie3 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 4 */
 if ($result = $conn->query($locatie04)){
   while ($row = $result->fetch_array()){
-    $locatie4 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie4 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 5 */
 if ($result = $conn->query($locatie05)){
   while ($row = $result->fetch_array()){
-    $locatie5 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie5 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 6 */
 if ($result = $conn->query($locatie06)){
   while ($row = $result->fetch_array()){
-    $locatie6 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie6 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 7 */
 if ($result = $conn->query($locatie07)){
   while ($row = $result->fetch_array()){
-    $locatie7 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie7 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 8 */
 if ($result = $conn->query($locatie08)){
   while ($row = $result->fetch_array()){
-    $locatie8 = "<section class= qwerty>".$row[0]." . ".$row[1]."</section>";
+    $locatie8 = "<section class= qwerty>".$row[0]."   ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 9 */
 if ($result = $conn->query($locatie09)){
   while ($row = $result->fetch_array()){
-    $locatie9 = "<section class= locatie>".$row[0]." . ".$row[1]."</section>";
+    $locatie9 = "<section class= locatie>".$row[0]."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 10 */
 if ($result = $conn->query($locatie010)){
   while ($row = $result->fetch_array()){
-    $locatie10 = $row[0]." . ".$row[1];
+    $locatie10 = $row[0]."  ".$row[1];
   } $result->close();
 } else { echo"verlopen";}
+
+
+
+
+
+
+
+
+
+$datum01="SELECT datum FROM evenementen LIMIT 1 ";
+
+
+
+
+
+
+if ($result = $conn->query($datum01)){
+  while ($row = $result->fetch_array()){
+    $datum01 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"verlopen";}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -139,14 +169,6 @@ if ($result = $conn->query($locatie010)){
         <article class="homepage-dropDownIcon">
             <p id="homepage-dropdown-btn">&#9776;</p>
         </article>
-        <!-- <div id="dropDown">
-            <p class="dropDown-button">&#9776;</p>
-            <ul class="dropDown">
-                <li>Events</li>
-                <li>Aanbiedingen</li>
-                <li>Contact</li>
-            </ul>
-        </div> -->
     </header>
 
 
@@ -159,7 +181,7 @@ if ($result = $conn->query($locatie010)){
    <div class="left">
       <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="locatie">
        <ul id="Locatie">
-   <li><a class="locatie 1"  href="#" onclick="openNav()"><?php echo $locatie1?></a></li>
+   <li><a class="locatie 1"  href="#" onclick="openNav()"><?php echo $locatie1."".$datum01?></a></li>
    <li><a class="locatie 2"  href="#" onclick="openNav()"><?php echo $locatie2?></a></li>
    <li><a class="locatie 3"  href="#" onclick="openNav()"><?php echo $locatie3?></a></li>
    <li><a class="locatie 4"  href="#" onclick="openNav()"><?php echo $locatie4?></a></li>

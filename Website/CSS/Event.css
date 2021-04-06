@@ -140,6 +140,7 @@ body{
     align-items: center;
     margin-top: 17vh;
     margin-bottom: 4vh;
+    position: fixed;
 }
 #socialMedia-homepage {
     display: flex;
@@ -169,7 +170,7 @@ body{
     margin-left: 3vw;
 }
 .contact-homepage{
-    margin-right: 3vw;
+    margin-left: 41vw;
 }
 }
 
