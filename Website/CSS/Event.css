@@ -14,22 +14,26 @@ body{
     
 #EventZoeken {
     box-sizing: border-box;
+    margin: 0vh 4vw;
+
+
 }
 
 .Evenementen {
     display: flex;
+    box-shadow: 1vh 1vw 1vh 1vw rgba(37, 43, 124, 0.144);
 }
 .left {
     background-color:#3f48cc;
-    flex: 35%;
-    padding-bottom: 1vh;
+    flex: 28%;
+    padding-bottom: 0vh;
 
 } 
 .right {
     background-color:khaki;
-    flex: 65%;
+    flex: 72%;
     width: 0%;
-    padding-bottom: 10vh;
+    padding-bottom: 0vh;
     
 
 }
@@ -44,6 +48,8 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    height: 61vh; width: 100%;
+    overflow:hidden; overflow-y:scroll;
 }
 #Locatie li a {
     padding: 12px;
@@ -138,8 +144,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 17vh;
-    margin-bottom: 4vh;
+    margin: 7vh 2vw;
     position: fixed;
 }
 #socialMedia-homepage {
@@ -170,7 +175,9 @@ body{
     margin-left: 3vw;
 }
 .contact-homepage{
-    margin-left: 41vw;
+    margin-right: 7vw;
+    margin-left: 33vw;
+    width: 20vw;
 }
 }
 

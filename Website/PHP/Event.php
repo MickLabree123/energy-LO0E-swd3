@@ -36,7 +36,7 @@ if ($conn->connect_error){
 
 
 /* Alle Locaties */
-$locatie01 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0 ";
+$locatie01 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0";
 $locatie02 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 1 ";
 $locatie03 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 2 ";
 $locatie04 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 3 ";
@@ -144,12 +144,6 @@ if ($result = $conn->query($datum01)){
 
 
 
-
-
-
-
-
-
 /**/
 ?>
 
@@ -181,7 +175,7 @@ if ($result = $conn->query($datum01)){
    <div class="left">
       <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="locatie">
        <ul id="Locatie">
-   <li><a class="locatie 1"  href="#" onclick="openNav()"><?php echo $locatie1."".$datum01?></a></li>
+   <li><a class="locatie 1"  href="#" onclick="openNav()"><?php echo $locatie1.$datum01?></a></li>
    <li><a class="locatie 2"  href="#" onclick="openNav()"><?php echo $locatie2?></a></li>
    <li><a class="locatie 3"  href="#" onclick="openNav()"><?php echo $locatie3?></a></li>
    <li><a class="locatie 4"  href="#" onclick="openNav()"><?php echo $locatie4?></a></li>
