@@ -75,13 +75,15 @@
 
     .artiest-tekst {
         width: 30vw;
-        background-color: antiquewhite;
+        background-color: #5591d3;
         margin-top: 3vh;
+        border: 1px solid black;
     }
 
     /* footer */
     .homepageEventLink {
         position: absolute;
-        top: 70vh;
+        top: 58vh;
+        left: 2vw;
     }
 }
