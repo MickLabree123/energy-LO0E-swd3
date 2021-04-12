@@ -25,7 +25,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = "";
+$pass = "root";
 $database = "energy";
 $conn = new mysqli($host, $user, $pass, $database);
 if ($conn->connect_error){
@@ -298,10 +298,9 @@ if ($result = $conn->query($datum010)){
         </article>
         <article class="homepage-webNav">
             <a href="homepage.php"><button>Home</button></a>
-            <a href="#"><button>Events</button></a>
-            <a href="#"><button>Acties</button></a>
+            <a href="Event.php"><button>Events</button></a>
+            <a href="actiepagina.php"><button>Acties</button></a>
             <a href="artiesten.php"><button>Artiesten</button></a>
-            <a class ="contact" href="#"><button>Contact</button></a>
         </article>
         <article class="homepage-dropDownIcon">
             <p id="homepage-dropdown-btn">&#9776;</p>
