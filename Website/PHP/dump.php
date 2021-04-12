@@ -9,6 +9,7 @@
     <meta name="keywords" content="Rock hard, energy, drink, event">
     <title>Rock Hard</title>
     <link rel="stylesheet" type="text/css" href="..\CSS\Event.css">
+    <link rel="stylesheet" type="text/css" href="..\CSS\Event.css">
     <script src="..\JavaScript\Event.js"></script>
     <script src="..\Website\energy.sql"></script>
     <!-- google fonts -->
@@ -18,9 +19,11 @@
 </head>
 <body>
 
+<style> 
+<?php include "dump.css"; ?>
+</style>
 
 
-<!--
 <?php
 $host = "localhost";
 $user = "root";
@@ -133,7 +136,7 @@ if ($result = $conn->query($datum01)){
 
 
 
-/*
+?>
 
 
 
@@ -161,7 +164,7 @@ if ($result = $conn->query($datum01)){
         <article class="homepage-dropDownIcon">
             <p id="homepage-dropdown-btn">&#9776;</p>
         </article>
-    </header>
+</header>
 
 
 
@@ -187,83 +190,133 @@ if ($result = $conn->query($datum01)){
 
 
 <article class="right">
-
 <div class="contentSection">
+
+
+
+
+
+
+
+
   <!--event 1-->
     <div class="content" data-number="1">
     <div id="InfoOverEvenement1" class="OverEvenement">    
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
     <div   class="OverEvenement-text">
       <article>
-        <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">AAAAAAAAA</a>
-      </article>
-      <a href="#">AAAAAAAAA</a>
-      <a href="#">BBBBBBBBB</a>
-      <a href="#">xxxxxxxxxxx</a>
-      <a href="#">xxxxxxxxxxxx</a>
-    </div>
-    </div>
-    </div>
+    <h2>Artiesten</h2>
+        
 
-<!--event 2-->
-  <div class="content" data-number="2">
-  <div id="InfoOverEvenement2" class="OverEvenement" >
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-    <div class="OverEvenement-text">
-      <article>
-        <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">bbbbbbbbbbbbbbb</a>
-      </article>
-      <a href="#">aaaabbbbbbbbbaaaaa</a>
-      <a href="#">aaaabbbbbbbbbbaaaaa</a>
-      <a href="#">aaaabbbbbbbbbaaaaaaaaaa</a>
-      <a href="#">aaaaaabbbbbbbaaaaa</a>
-    </div>
+
+
+
+
+<div class="container">
+
+<section class="AlleTijdenVanArtiest">
+<div class="mySlides">  
+    <p>hallo111</p>
 </div>
-  </div>
-  <!--event 3-->
-  
-  <div class="content" data-number="3">
-  <div id="InfoOverEvenement3" class="OverEvenement" >
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="OverEvenement-text">
-      <article>
-        <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">aaaaaaaaaaaa</a>
-      </article>
-      <a href="#">aaaaaaaaa</a>
-      <a href="#">aaaaaaaaa</a>
-      <a href="#">aaaaaaaaaaaaaa</a>
-      <a href="#">aaaaaaaaaaa</a>
-    </div>
+<div class="mySlides">
+    <p>hallo222</p>
 </div>
+<div class="mySlides">
+    <p>hallo333333</p>
+</div>
+<div class="mySlides">
+    <p>hallo444444444</p>
+</div>
+<div class="mySlides">
+    <p>hallo555555555</p>
+</div>
+<div class="mySlides">
+    <p>hallo66666666</p>
+</div>
+<div class="mySlides">
+    <p>hallo777777777</p>
+</div>
+<div class="mySlides">
+    <p>hallo88888888888</p>
+</div>
+<div class="mySlides">
+    <p>hallo999999999</p>
+</div>
+<div class="mySlides">
+    <p>hallo0000000</p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor" onclick="currentSlide(1)" >hi111111</a>
+  </div>
+  <div class="column">
+    <a class="demo cursor" onclick="currentSlide(2)">hi22222</a>
+  </div>
+  <div class="column">
+   <a class="demo cursor" onclick="currentSlide(3)">hi333333333</a>
+  </div>
+  <div class="column">
+  <a class="demo cursor"  onclick="currentSlide(4)">hi44444444</a>
+  </div>
+  <div class="column">
+  <a class="demo cursor"  onclick="currentSlide(5)">hi5555555</a>
+  </div>
+  <div class="column">
+  <a class="demo cursor" onclick="currentSlide(6)">hi6666666</a>
+  </div>
+  <div class="column">
+  <a class="demo cursor" onclick="currentSlide(7)">hi77777777</a>
+  </div>
+  <div class="column">
+  <a class="demo cursor" onclick="currentSlide(8)">hi88888888</a>
+  </div>
+  <div class="column">
+  <a class="demo cursor" onclick="currentSlide(9)">hi999999999</a>
+  <div class="column">
+  <a class="demo cursor" onclick="currentSlide(10)">hi000000000</a>
+  </div>
   </div>
 
+</div>
+</div>
 
-<!--event 4-->
-<div id="InfoOverEvenement4" class="OverEvenement" >
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="OverEvenement-text">
-      <article>
-        <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">aaaaaaaaaaaa</a>
-      </article>
-      <a href="#">aaaaaaaaa</a>
-      <a href="#">aaaaaaaaa</a>
-      <a href="#">aaaaaaaaaaaaaa</a>
-      <a href="#">aaaaaaaaaaa</a>
-    </div>
-  </div>
+ </article>
+
+
+
+
+
+
+
 
     </div>
-    </article>
-    </section>
-    </section>
+    </div>
+    </div>
+    </div>
+
+</article>
+
+
+
+
+
+
+
+
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -298,7 +351,7 @@ if ($result = $conn->query($datum01)){
 
 
 
-?>
+
 
 
 

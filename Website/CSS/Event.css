@@ -82,7 +82,7 @@ body{
 
 .OverEvenement {
     width:65%;
-    height: 50%;
+    height: 65%;
     position: fixed;
     z-index: 1;
     background-color: red;
@@ -104,11 +104,68 @@ body{
     display: block;
     transition: 0.3s;
   }
-  .OverEvenement-locatie{
-        background-color: olive;
-        font-size: 27px;
-        margin: -5vh 0vw 0vh 8vw;
+                            .OverEvenement-locatie{
+                                    background-color: olive;
+                                    font-size: 27px;
+                                    margin: -5vh 0vw 0vh 8vw;
+                            }
+
+                            .OverEvenement-sponsor a{
+                                    position: fixed;
+                                    background-color: olive;
+                                    color: paleturquoise;
+                                    font-size: 27px;
+                                     margin: 2vh 0vw 0vh 37vw;
+                            }             
+
+
+
+
+  .container {
+    position: relative;
+  } 
+  .mySlides {
+    display: none;
+    font-size: 20px;
+    
   }
+  .AlleTijdenVanArtiest{
+      position: fixed;
+      background-color: palevioletred;
+       margin: 0vh 0vw 0vh 30vw;
+   
+}
+ 
+  .cursor {
+    cursor: pointer;
+  }
+  .row:after {
+      position: fixed;
+    display: table;
+    clear: both;
+    margin: 0vh 0vw 0vh 0vw;
+  }
+  .column {
+    float: bottom;
+ 
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

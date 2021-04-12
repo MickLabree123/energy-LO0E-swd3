@@ -33,7 +33,7 @@ if ($conn->connect_error){
 }
 
 
-
+/*----------------------------------------------------------------*/
 /* Alle Locaties */
 $locatie01 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0 ";
 $locatie02 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 1 ";
@@ -117,13 +117,89 @@ if ($result = $conn->query($locatie010)){
 } else { echo"verlopen";}
 
 
+/*----------------------------------------------------------------*/
+/*alle artiesten*/
+$artiest01 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 0";
+$artiest02 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 1";
+$artiest03 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 2";
+$artiest04 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 3";
+$artiest05 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 4";
+$artiest06 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 5";
+$artiest07 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 6";
+$artiest08 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 7";
+$artiest09 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 8";
+$artiest010 = "SELECT naam FROM artiesten where actief = 1 limit 1 OFFSET 9";
 
 
+/* artiest 1 */
+if ($result = $conn->query($artiest01)){
+  while ($row = $result->fetch_array()){
+    $artiest1 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
 
+/* artiest 2 */
+if ($result = $conn->query($artiest02)){
+  while ($row = $result->fetch_array()){
+    $artiest2 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
 
+/* artiest 3 */
+if ($result = $conn->query($artiest03)){
+  while ($row = $result->fetch_array()){
+    $artiest3 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
 
+/* artiest 4 */
+if ($result = $conn->query($artiest04)){
+  while ($row = $result->fetch_array()){
+    $artiest4 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
 
+/* artiest 5 */
+if ($result = $conn->query($artiest05)){
+  while ($row = $result->fetch_array()){
+    $artiest5 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
 
+/* artiest 6 */
+if ($result = $conn->query($artiest06)){
+  while ($row = $result->fetch_array()){
+    $artiest6 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+/* artiest 7 */
+if ($result = $conn->query($artiest07)){
+  while ($row = $result->fetch_array()){
+    $artiest7 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+/* artiest 8 */
+if ($result = $conn->query($artiest08)){
+  while ($row = $result->fetch_array()){
+    $artiest8 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+/* artiest 9 */
+if ($result = $conn->query($artiest09)){
+  while ($row = $result->fetch_array()){
+    $artiest9 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+/* artiest 10 */
+if ($result = $conn->query($artiest010)){
+  while ($row = $result->fetch_array()){
+    $artiest10 = "<section class= qwerty>".$row[0]."</section>";
+  } $result->close();
+} else { echo"fout";}
 
 
 /*
@@ -135,18 +211,109 @@ if ($result = $conn->query($datum01)){
     $datum01 = "<section class= qwerty>".$row[0]."</section>";
   } $result->close();
 } else { echo"verlopen";}
+-----------------------------------------------------
+
+$locatie01 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0 ";
+
+"SELECT DATE_FORMAT('2008-05-15', '%W %D %M %Y') as Calculated_Date
+
+if ($result = $conn->query($locatie01)){
+  while ($row = $result->fetch_array()){
+    $locatie1 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
+  } $result->close();
+} else { echo"verlopen";}
 */
 
+$datum01 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 0 ";
+$datum02 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 1 ";
+$datum03 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 2 ";
+$datum04 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 3 ";
+$datum05 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 4 ";
+$datum06 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 5 ";
+$datum07 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 6 ";
+$datum08 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 7 ";
+$datum09 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 8 ";
+$datum010 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
+FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 9 ";
 
 
+if ($result = $conn->query($datum01)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum1 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+
+if ($result = $conn->query($datum02)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum2 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+if ($result = $conn->query($datum03)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum3 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+if ($result = $conn->query($datum04)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum4 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+if ($result = $conn->query($datum05)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum5 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+if ($result = $conn->query($datum06)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum6 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+if ($result = $conn->query($datum07)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum7 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+if ($result = $conn->query($datum08)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum8 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+if ($result = $conn->query($datum09)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum9 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
+
+if ($result = $conn->query($datum010)){
+  while ($row = mysqli_fetch_assoc($result)){
+    $datum10 = "<section class= qwerty>".$row["datum"]."<br>"."</section>";
+  } $result->close();
+} else { echo"fout";}
 
 
 
 /**/
 ?>
-
-
-
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------>
 <header id="homepage-header">
         <article class="homepage-logo">
             <img src="..\Images\logo.png" height="100" alt="rockhard energy">
@@ -188,143 +355,611 @@ if ($result = $conn->query($datum01)){
 
 
 
-    <!--event 1-->
-    <div class="content" data-number="1">
-    <div id="InfoOverEvenement1" class="OverEvenement">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
-    <div class="OverEvenement-text">
+<!--event 1----------------------------------------------------------------------------------->
+<div class="content" data-number="1">
+<div id="InfoOverEvenement1" class="OverEvenement">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+<div class="OverEvenement-text">
      
+                                <article class="OverEvenement-locatie">
+                                        <h2><?php echo $locatie1?></h2>
+                                </article>
+<article>                        
+  <h2>Artiesten</h2>
+   
 
-      <article class="OverEvenement-locatie">
-               <h2><?php echo $locatie1?></h2>
-      </article>
+<div class="container">
 
-        <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">AAAAAAAAA</a>
-    
-      <a href="#">AAAAAAAAA</a>
-      <a href="#">BBBBBBBBB</a>
-      <a href="#">xxxxxxxxxxx</a>
-      <a href="#">xxxxxxxxxxxx</a>
+<section class="AlleTijdenVanArtiest">
+<div class="mySlides ArtiestTijd1">  
+    <p><?php echo $datum1?></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p><?php echo $datum8?></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd1">
+    <p></p>
+</div>
+</section>
 
-          <article>
-          <a href="#">georganiseerd door Hard Rock</a>
-          </article>
-    </div>
-    </div>
-    </div>
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest1" onclick="currentSlide1(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest1" onclick="currentSlide1(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest1" onclick="currentSlide1(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest1"  onclick="currentSlide1(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest1"  onclick="currentSlide1(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest1" onclick="currentSlide1(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest1" onclick="currentSlide1(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest1" onclick="currentSlide1(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest1" onclick="currentSlide1(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest1" onclick="currentSlide1(10)"></a>
+  </div>
+  </div>
 
-<!--event 2-->
+</div>
+</div>
+
+ </article>
+
+
+
+
+                                          <article class="OverEvenement-sponsor">
+                                          <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                          </article>
+</div>
+</div>
+</div>
+
+
+
+
+
+<!--event 2-------------------------------------------------------------------------------------->
   <div class="content" data-number="2">
   <div id="InfoOverEvenement2" class="OverEvenement" >
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
     <div class="OverEvenement-text">
-      <article class="OverEvenement-locatie">
-      <h2><?php echo $locatie2?></h2>
-      </article>
+                                                <article class="OverEvenement-locatie">
+                                                <h2><?php echo $locatie1?></h2>
+                                                </article>
 
-        <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">bbbbbbbbbbbbbbb</a>
-      </article>
-      <a href="#">aaaabbbbbbbbbaaaaa</a>
-      <a href="#">aaaabbbbbbbbbbaaaaa</a>
-      <a href="#">aaaabbbbbbbbbaaaaaaaaaa</a>
-      <a href="#">aaaaaabbbbbbbaaaaa</a>
-    </div>
+<article>                        
+     <h2>Artiesten</h2>
+   
+
+
+     <div class="container">
+
+<section class="AlleTijdenVanArtiest">
+<div class="mySlides ArtiestTijd2">  
+    <p><?php echo $datum1?></p>
 </div>
+<div class="mySlides ArtiestTijd2">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd2">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd2">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd2">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd2">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd2">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd2">
+    <p><<?php echo $datum8?>/p>
+</div>
+<div class="mySlides ArtiestTijd2">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd2">
+    <p></p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest2" onclick="currentSlide2(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest2" onclick="currentSlide2(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest2" onclick="currentSlide2(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest2"  onclick="currentSlide2(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest2"  onclick="currentSlide2(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest2" onclick="currentSlide2(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest2" onclick="currentSlide2(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest2" onclick="currentSlide2(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest2" onclick="currentSlide2(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest2" onclick="currentSlide2(10)"></a>
+  </div>
   </div>
 
-  <!--event 3-->
+</div>
+</div>
+
+ </article>
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+
+    </div>
+    </div>
+    </div>
+
+
+
+  <!--event 3-------------------------------------------------------------------------------------->
   <div class="content" data-number="3">
   <div id="InfoOverEvenement3" class="OverEvenement" >
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
     <div class="OverEvenement-text">
+
+
+
+
+
     <article class="OverEvenement-locatie">
       <h2><?php echo $locatie3?></h2>
       </article>
 
       <article>
         <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">aaaaaaaaaaaa</a>
-      </article>
-      <a href="#">33333333333</a>
-      <a href="#">33333333333</a>
-      <a href="#">3333333333333</a>
-      <a href="#">333333333333333</a>
-    </div>
+    
+      
+
+
+      <div class="container">
+
+<section class="AlleTijdenVanArtiest">
+<div class="mySlides ArtiestTijd3">  
+    <p><?php echo $datum1?></p>
 </div>
+<div class="mySlides ArtiestTijd3">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd3">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd3">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd3">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd3">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd3">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd3">
+    <p><?php echo $datum8?></p>
+</div>
+<div class="mySlides ArtiestTijd3">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd3">
+    <p></p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest3" onclick="currentSlide3(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest3" onclick="currentSlide3(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest3" onclick="currentSlide3(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest3"  onclick="currentSlide3(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest3"  onclick="currentSlide3(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest3" onclick="currentSlide3(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest3" onclick="currentSlide3(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest3" onclick="currentSlide3(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest3" onclick="currentSlide3(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest3" onclick="currentSlide3(10)"></a>
+  </div>
   </div>
 
-  <!--event 4-->
+
+</div>
+</div>
+
+ </article>
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+
+</div>
+</div>
+</div>
+
+
+
+
+  <!--event 4---------------------------------------------------------------------------------------->
   <div class="content" data-number="4">
   <div id="InfoOverEvenement4" class="OverEvenement" >
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
     <div class="OverEvenement-text">
+
     <article class="OverEvenement-locatie">
       <h2><?php echo $locatie4?></h2>
       </article>
 
-      <article>
-        <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">44444444444444444</a>
-      </article>
-      <a href="#">444444444444444</a>
-      <a href="#">44444444444444444</a>
-      <a href="#">44444444444444444</a>
-      <a href="#">44444444444444444444</a>
-    </div>
+        
+<article>
+<h2>Artiesten</h2>
+
+
+<div class="container">
+
+<section class="AlleTijdenVanArtiest">
+
+<div class="mySlides ArtiestTijd4">  
+    <p><?php echo $datum1?></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p><?php echo $datum8?></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd4">
+    <p></p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest4" onclick="currentSlide4(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest4" onclick="currentSlide4(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest4" onclick="currentSlide4(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest4"  onclick="currentSlide4(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest4"  onclick="currentSlide4(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest4" onclick="currentSlide4(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest4" onclick="currentSlide4(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest4" onclick="currentSlide4(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest4" onclick="currentSlide4(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest4" onclick="currentSlide4(10)"></a>
   </div>
   </div>
 
-  <!--event 5-->
+
+</div>
+</div>
+
+</article>
+
+
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+
+
+  </div>
+  </div>
+  </div>
+
+  <!--event 5------------------------------------------------------------------------------------>
   <div class="content" data-number="5">
   <div id="InfoOverEvenement5" class="OverEvenement" >
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
     <div class="OverEvenement-text">
+
     <article class="OverEvenement-locatie">
       <h2><?php echo $locatie5?></h2>
       </article>
 
+    
+  
+
       <article>
         <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">55555555555555</a>
-      </article>
-      <a href="#">555555555555555</a>
-      <a href="#">55555555555555</a>
-      <a href="#">5555555555555555</a>
-      <a href="#">5555555555555555</a>
-    </div>
+    
+      
+
+
+      <div class="container">
+
+<section class="AlleTijdenVanArtiest">
+
+<div class="mySlides ArtiestTijd5">  
+    <p><?php echo $datum1?></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p><?php echo $datum8?></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd5">
+    <p></p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest5" onclick="currentSlide5(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest5" onclick="currentSlide5(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest5" onclick="currentSlide5(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest5"  onclick="currentSlide5(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest5"  onclick="currentSlide5(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest5" onclick="currentSlide5(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest5" onclick="currentSlide5(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest5" onclick="currentSlide5(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest5" onclick="currentSlide5(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest5" onclick="currentSlide5(10)"></a>
   </div>
   </div>
 
-  <!--event 6-->
+
+</div>
+</div>
+
+</article>
+
+
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+
+
+</div>
+</div>
+</div>
+
+  <!--event 6------------------------------------------------------------------------------------->
   <div class="content" data-number="6">
   <div id="InfoOverEvenement6" class="OverEvenement" >
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
     <div class="OverEvenement-text">
+
     <article class="OverEvenement-locatie">
       <h2><?php echo $locatie6?></h2>
       </article>
 
+
       <article>
         <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">6666666666666666</a>
-      </article>
-      <a href="#">66666666666666666</a>
-      <a href="#">6666666666666666666</a>
-      <a href="#">666666666666666</a>
-      <a href="#">666666666666666</a>
-    </div>
+       
+
+
+      <div class="container">
+
+<section class="AlleTijdenVanArtiest">
+
+<div class="mySlides ArtiestTijd6">  
+    <p><?php echo $datum1?></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p><?php echo $datum8?></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd6">
+    <p></p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest6" onclick="currentSlide6(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest6" onclick="currentSlide6(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest6" onclick="currentSlide6(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest6"  onclick="currentSlide6(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest6"  onclick="currentSlide6(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest6" onclick="currentSlide6(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest6" onclick="currentSlide6(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest6" onclick="currentSlide6(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest6" onclick="currentSlide6(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest6" onclick="currentSlide6(10)"></a>
   </div>
   </div>
 
-<!--event 7-->
+
+</div>
+</div>
+
+</article>
+
+
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+
+
+</div>
+</div>
+</div>
+
+<!--event 7--------------------------------------------------------------------------------------->
 <div class="content" data-number="7">
   <div id="InfoOverEvenement7" class="OverEvenement">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
@@ -335,18 +970,94 @@ if ($result = $conn->query($datum01)){
 
       <article>
         <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">777777777777</a>
-      </article>
-      <a href="#">777777777777777</a>
-      <a href="#">777777777777</a>
-      <a href="#">77777777777</a>
-      <a href="#">777777777777777</a>
-    </div>
+    
+
+      <div class="container">
+
+<section class="AlleTijdenVanArtiest">
+
+<div class="mySlides ArtiestTijd7">  
+    <p><?php echo $datum1?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <p><?php echo $datum8?></p>
+</div>
+<div class="mySlides ArtiestTijd7">
+    <pp>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest7" onclick="currentSlide7(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest7" onclick="currentSlide7(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest7" onclick="currentSlide7(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest7"  onclick="currentSlide7(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest7"  onclick="currentSlide7(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest7" onclick="currentSlide7(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest7" onclick="currentSlide7(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest7" onclick="currentSlide7(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest7" onclick="currentSlide7(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest7" onclick="currentSlide7(10)"></a>
   </div>
   </div>
 
-<!--event 8-->
+
+</div>
+</div>
+
+ </article>
+
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+
+
+
+</div>
+</div>
+</div>
+
+<!--event 8--------------------------------------------------------------------------------------->
 <div class="content" data-number="8">
   <div id="InfoOverEvenement8" class="OverEvenement" >
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
@@ -354,20 +1065,102 @@ if ($result = $conn->query($datum01)){
     <article class="OverEvenement-locatie">
       <h2><?php echo $locatie8?></h2>
       </article>
+     
+      
+
       <article>
         <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">88888888888</a>
-      </article>
-      <a href="#">88888888888</a>
-      <a href="#">88888888888888888</a>
-      <a href="#">8888888888888888</a>
-      <a href="#">888888888888888</a>
-    </div>
+    
+      
+
+
+      <div class="container">
+
+<section class="AlleTijdenVanArtiest">
+
+<div class="mySlides ArtiestTijd8">  
+    <p><?php echo $datum1?></p>
+</div>
+<div class="mySlides ArtiestTijd8">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd8">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd8">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd8">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd8">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd8">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd8">
+    8<p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTij8">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd8">
+    <p></p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest8" onclick="currentSlide8(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest8" onclick="currentSlide8(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest8" onclick="currentSlide8(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest8"  onclick="currentSlide8(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest8"  onclick="currentSlide8(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest8" onclick="currentSlide8(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest8" onclick="currentSlide8(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest8" onclick="currentSlide8(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest8" onclick="currentSlide8(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest8" onclick="currentSlide8(10)"></a>
   </div>
   </div>
 
-<!--event 9-->
+
+
+
+</div>
+</div>
+
+ </article>
+
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+
+
+  </div>
+  </div>
+  </div>
+
+<!--event 9--------------------------------------------------------------------------------------->
 <div id="www" class="content" data-number="9">
   <div id="InfoOverEvenement9" class="OverEvenement">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</a>
@@ -377,20 +1170,103 @@ if ($result = $conn->query($datum01)){
                   <h2><?php echo $locatie9?></h2>
         </article>
 
-      <article>
+        <article>
         <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">999999999999</a>
-      </article>
-      <a href="#">9999999999999999</a>
-      <a href="#">999999999999999</a>
-      <a href="#">999999999999999</a>
-      <a href="#">99999999999999</a>
-    </div>
+    
+      
+
+
+      <div class="container">
+
+<section class="AlleTijdenVanArtiest">
+
+<div class="mySlides ArtiestTijd9">  
+    <p><?php echo $datum1?></p>
+</div>
+<div class="mySlides ArtiestTijd9">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd9">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd9">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd9">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd9">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd9">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd9">
+    <p><?php echo $datum8?></p>
+</div>
+<div class="mySlides ArtiestTij9">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd9">
+    <p></p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest9" onclick="currentSlide9(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest9" onclick="currentSlide9(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest9" onclick="currentSlide9(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest9"  onclick="currentSlide9(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest9"  onclick="currentSlide9(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest9" onclick="currentSlide9(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest9" onclick="currentSlide9(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest9" onclick="currentSlide9(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest9" onclick="currentSlide9(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest9" onclick="currentSlide9(10)"></a>
   </div>
   </div>
 
-<!--event 10-->
+
+
+
+</div>
+</div>
+
+ </article>
+
+
+
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+        
+
+
+
+  </div>
+  </div>
+  </div>
+
+<!--event 10------------------------------------------------------------------------------------->
 <div class="content" data-number="10">
 <div id="InfoOverEvenement10" class="OverEvenement">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNa10v()">&times;</a>
@@ -399,20 +1275,98 @@ if ($result = $conn->query($datum01)){
       <h2><?php echo $locatie10?></h2>
       </article>
 
+     
+  
       <article>
         <h2>Artiesten</h2>
-        <p></p>
-        <a href="#">0000000000</a>
-      </article>
-      <a href="#">000000000</a>
-      <a href="#">00000000000</a>
-      <a href="#">000000000000</a>
-      <a href="#">000000000000</a>
-    </div>
+    
+      
+
+
+      <div class="container">
+
+<section class="AlleTijdenVanArtiest">
+
+<div class="mySlides ArtiestTijd10">  
+    <p><?php echo $datum1?></p>
+</div>
+<div class="mySlides ArtiestTijd10">
+    <p><?php echo $datum2?></p>
+</div>
+<div class="mySlides ArtiestTijd10">
+    <p><?php echo $datum3?></p>
+</div>
+<div class="mySlides ArtiestTijd10">
+    <p><?php echo $datum4?></p>
+</div>
+<div class="mySlides ArtiestTijd10">
+    <p><?php echo $datum5?></p>
+</div>
+<div class="mySlides ArtiestTijd10">
+    <p><?php echo $datum6?></p>
+</div>
+<div class="mySlides ArtiestTijd10">
+    <p><?php echo $datum7?></p>
+</div>
+<div class="mySlides ArtiestTijd10">
+    <p><?php echo $datum8?></p>
+</div>
+<div class="mySlides ArtiestTij10">
+    <p></p>
+</div>
+<div class="mySlides ArtiestTijd10">
+    <p></p>
+</div>
+</section>
+
+<div class="row">
+  <div class="column">
+    <a class="demo cursor TijdArtiest10" onclick="currentSlide10(1)" ><?php echo $artiest1?></a>
+  </div>
+  <div class="column">
+    <a class="demo cursor TijdArtiest10" onclick="currentSlide10(2)"><?php echo $artiest2?></a>
+  </div>
+  <div class="column">
+   <a class="demo cursor TijdArtiest10" onclick="currentSlide10(3)"><?php echo $artiest3?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest10"  onclick="currentSlide10(4)"><?php echo $artiest4?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest10"  onclick="currentSlide10(5)"><?php echo $artiest5?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest10" onclick="currentSlide10(6)"><?php echo $artiest6?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest10" onclick="currentSlide10(7)"><?php echo $artiest7?></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest10" onclick="currentSlide10(8)"></a>
+  </div>
+  <div class="column">
+  <a class="demo cursor TijdArtiest10" onclick="currentSlide10(9)"></a>
+  <div class="column">
+  <a class="demo cursor TijdArtiest10" onclick="currentSlide10(10)"></a>
   </div>
   </div>
 
-  <!--Events-->
+
+</div>
+</div>
+
+ </article>
+
+                                              <article class="OverEvenement-sponsor">
+                                              <a href="#">mede mogelijk gemaakt door Hard Rock</a>
+                                              </article>
+
+
+  </div>
+  </div>
+  </div>
+
+  <!--Events-------------------------------------------------------------------------------------->
   <div class="content" data-number="0">
 <div id="InfoOverEvenement0" class="OverEvenement ExtraEvenement">
     <div class="ExtraEvenement-text">
@@ -420,14 +1374,11 @@ if ($result = $conn->query($datum01)){
         <h2>Vind jouw event hier</h2>
         <p></p>
         <a href="#">De best artiesten </a>
+        <a href="#">Voor de beste events</a>
       </article>
-      <a href="#">xxxxxxxxxxxxx</a>
-      <a href="#">xxxxxxxxxxxx</a>
-      <a href="#">xxxxxxxxxxxx</a>
-      <article>
-      <a href="#">georganiseerd door Hard Rock</a>
-      </article>
-    </div>
+
+                                            
+  </div>
   </div>
   </div>
 
