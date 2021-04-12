@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+        /* footer */
+        #homepage-footer {
+          display: flex;
+          flex-direction: row;
+          align-items:flex-end;
+          justify-content: space-between;
+          height: 20vh;
+      }
+      #socialMedia-homepage{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2vh;
+      }
+  
+      .homepageEventLink a{
+          position: absolute;
+          bottom: -150vh;
+          left: 12vw;
+          font-size: 1.6rem;
+          list-style: none;
+          text-decoration: none;
+          color: #3f48cc;
+      }
+  
+      .homepage-socialMediaLink ul li{
+          list-style: none;
+          font-size: 1.6rem;
+          margin: 2vw;
+      }
+      .homepage-socialMediaLink a {
+          text-decoration: none;
+          color: #3f48cc;
+      }
+  
+      .homepage-socialLinkList {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-content: space-around;
+      }
+  
+      .contact-homepage {
+          margin-bottom: 2vh;
+          margin-left: 3vw;
+      }
+  }
