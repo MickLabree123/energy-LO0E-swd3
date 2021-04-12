@@ -21,7 +21,6 @@
         $user = "root";
         $password = "root";
         $database = "energy";
-        
         $conn = new mysqli($server, $user, $password, $database);
     ?>
 
@@ -31,15 +30,22 @@
         </article>
         <article class="homepage-webNav">
             <a href="homepage.php"><button>Home</button></a>
-            <a href="#"><button>Events</button></a>
-            <a href="#"><button>Acties</button></a>
+            <a href="Event.php"><button>Events</button></a>
+            <a href="Actiepagina.php"><button>Acties</button></a>
             <a href="artiesten.php"><button>Artiesten</button></a>
             <a href="#"><button>Contact</button></a>
         </article>
-        <article class="homepage-dropDownIcon">
-            <p id="homepage-dropdown-btn">&#9776;</p>
-        </article>
-        
+
+<!-- hamburger menu -->
+        <a href="#" id="openbtn" onclick="openBtn()"><i class="fas fa-bars"></i></a>
+        <div id="menu" class="menu">
+        <a href="#" class="closebtn" onclick="closeBtn()"><i class="fas fa-times"></i></a>
+        <li><a href="hompagina.php">Home</a></li>
+        <li><a href="Event.php">Events</a></li>
+        <li><a href="Actiepagina.php">Acties</a></li>
+        <li><a href="artiesten.php">Artiesten</a></li>
+        <li><a href="#">Contact</a></li>
+    </div>
 </header>
 
     <article class='headline-tekst'>
@@ -100,6 +106,7 @@
             <p>email: rockhard.contact@gmail.nl</p>
         </section>
     </footer>
-    
+    <script src="js/global.js"></script>
+    <script src="https://kit.fontawesome.com/5b96b17e8a.js" crossorigin="anonymous"></script>
 </body>
 </html>

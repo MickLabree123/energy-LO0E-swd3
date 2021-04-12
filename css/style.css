@@ -1,35 +1,401 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #84b3e6;
+}
+
+@media screen and (min-width: 100px) and (max-width:768.9px) {
+    header{
+        width: 100vw;
+        height: 95px;
+        background-color: #393D6A;
+    }
+
+    header nav{
+        display: none;
+      }
+
+      .logo{
+        height: 90px;
+        
+      }
+
+      .menu{
+        width: 0vw;
+        height: 100vh;
+        background-color: #393D6A;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        transition: all 250ms;
+        z-index: 1;
+      }
+  
+      .menu li a{
+        color: white;
+        font-size: 30px;
+        line-height: 5rem;
+        padding: 15px 10px;
+        border-radius: 10px;
+        transition: all 250ms;
+        font-weight: bold;
+      }
+  
+      .menu li a:active{
+        background-color: #5591d3;
+      }
+  
+      .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        padding: 14px 25px;
+        font-size: 36px;
+        color: white;
+        border-radius: 10px;
+        transition: all 250ms;
+      }
+
+      .closebtn:active{
+        background-color: #5591d3;
+      }
+
+      #openbtn{
+        float: right;
+        margin-top: 3vh;
+        margin-right: 5vw;
+        font-size: 30px;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 15px;
+      }
+
+      #openbtn:active{
+        background-color: #5591d3;
+      }
+    
+    .text{
+        margin-top: 10vh;
+        text-align: center;
+    }
+    
+    html,body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #homepage-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3vh;
+    }
+    .homepage-logo {
+        margin-left: 3vw;
+    }
+    
+    .homepage-webNav button{
+       display: none;
+    }
+    .homepage-webNav button:hover {
+        color: #393D6A;
+        background-color: #5591d3; 
+        cursor: pointer;
+    } 
+    .homepage-dropDownIcon {
+        display: none;
+    }
+    
+    
+    
+    .aanbieding1 img{
+        height: 200px;
+    }
+    
+    .aanbieding1{
+        float: left;
+        display: flex;
+        background-color: #393D6A;
+        height: 400px;
+        width: 100%;
+        margin-top: 5vh;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+        color: #5591d3;
+        
+        
+    }
+    
+    .aanbieding2 img{
+        height: 200px;
+    }
+    
+    .aanbieding2{
+        float: left;
+        display: flex;
+        background-color: #393D6A;
+        height: 400px;
+        width: 100%;
+        margin-top: 5vh;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+        color: #5591d3;
+        
+    }
+    
+    .aanbieding3{
+        float: left;
+        display: flex;
+        background-color: #393D6A;
+        height: 400px;
+        width: 100%;
+        margin-top: 5vh;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+        color: #5591d3;
+        
+    }
+    
+    .aanbieding3 img{
+        height: 200px;
+    }
+    .image1{
+        margin-left: -58vw;
+        margin-top: 175px;
+    }
+    .image2{
+        margin-left: -65vw;
+        margin-top: 175px;
+    }
+    .image3{
+        margin-left: -41vw;
+        margin-top: 175px;
+    }
+    .image4{
+        margin-left: -57vw;
+        margin-top: 175px;
+    }
+    .image5{
+        margin-left: -65vw;
+        margin-top: 175px;
+    }
+    .image6{
+        height: 200px;
+        margin-left: -9vw;
+        margin-top: 175px;
+    
+    }
+    
+    .image5{
+        margin-left: -65vw;
+        margin-top: 175px;
+    }
+    .image6{
+        height: 200px;
+        margin-left: -7vw;
+        margin-top: 175px;
+    
+    }
+    
+    
+    /*footer*/
+    #homepage-footer {
+        display: none;
+        
+    }
+    #socialMedia-homepage {
+        display: none;
+    }
+    #socialMedia-homepage a {
+       display: none;
+    }
+    #socialMedia-homepage a:hover {
+        display: none;
+    }
+    
+    #socialMedia-homepage ul {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+#openbtn{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.text{
+    margin-top: 10vh;
+    text-align: center;
+}
+
 html,body{
     height: 100%;
     width: 100%;
     margin: 0;
 }
 
-main{
-    width: 800px;
-    margin: 100px auto;
+#homepage-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+}
+.homepage-logo {
+    margin-left: 3vw;
+}
+
+.homepage-webNav button{
+    font-size: 1.3rem;
+    background-color: white;
+    color: #5591d3;
+    border: none;
+    margin-left: 3vw;
+    background-color: #393D6A;
+    width: 10vw;
+    height: 9vh;
+    border-radius: 25%;
+    transition: all 100ms;
+}
+.homepage-webNav button:hover {
+    color: #393D6A;
+    background-color: #5591d3; 
+    cursor: pointer;
+} 
+.homepage-dropDownIcon {
+    display: none;
+}
+
+
+
+.aanbieding1 img{
+    height: 200px;
 }
 
 .aanbieding1{
     float: left;
     display: flex;
-    background-color: antiquewhite;
+    background-color: #393D6A;
     height: 400px;
     width: 400px;
-    margin-left: 25px;
-    margin-top: 2vh;
+    margin-left: 15vw;
+    margin-top: 5vh;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 15px;
+    color: #5591d3;
     
     
-}
-.aanbieding2{
-    margin-left: 22vw;
 }
 
-.aanbieding1 img{
+.aanbieding2 img{
     height: 200px;
-    margin-left: -275px;
-    margin-top: 150px;
+}
+
+.aanbieding2{
+    float: left;
+    display: flex;
+    background-color: #393D6A;
+    height: 400px;
+    width: 400px;
+    margin-left: 15vw;
+    margin-top: 5vh;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    color: #5591d3;
     
+}
+
+.aanbieding3{
+    float: left;
+    display: flex;
+    background-color: #393D6A;
+    height: 400px;
+    width: 400px;
+    margin-left: 15vw;
+    margin-top: 5vh;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    color: #5591d3;
+    
+}
+
+.aanbieding3 img{
+    height: 200px;
+}
+.aanbieding3 img{
+    height: 200px;
+}
+.image1{
+    margin-left: -16vw;
+    margin-top: 175px;
+}
+.image2{
+    margin-left: -18vw;
+    margin-top: 175px;
+}
+.image3{
+    margin-left: -12vw;
+    margin-top: 175px;
+}
+.image4{
+    margin-left: -16vw;
+    margin-top: 175px;
+}
+.image5{
+    margin-left: -18vw;
+    margin-top: 175px;
+}
+.image6{
+    height: 200px;
+    margin-left: -2vw;
+    margin-top: 175px;
+
+}
+
+
+/*footer*/
+#homepage-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1500px;
+    
+}
+#socialMedia-homepage {
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    justify-content: space-between;
+}
+#socialMedia-homepage a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #3f48cc;
+    transition: all 250ms;
+}
+#socialMedia-homepage a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#socialMedia-homepage ul {
+    list-style: none;
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+    align-items: center;
+}
 }
