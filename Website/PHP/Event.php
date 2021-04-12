@@ -202,28 +202,6 @@ if ($result = $conn->query($artiest010)){
 } else { echo"fout";}
 
 
-/*
-$datum01="SELECT datum FROM evenementen LIMIT 1 ";
-
-
-if ($result = $conn->query($datum01)){
-  while ($row = $result->fetch_array()){
-    $datum01 = "<section class= qwerty>".$row[0]."</section>";
-  } $result->close();
-} else { echo"verlopen";}
------------------------------------------------------
-
-$locatie01 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0 ";
-
-"SELECT DATE_FORMAT('2008-05-15', '%W %D %M %Y') as Calculated_Date
-
-if ($result = $conn->query($locatie01)){
-  while ($row = $result->fetch_array()){
-    $locatie1 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
-  } $result->close();
-} else { echo"verlopen";}
-*/
-
 $datum01 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
 FROM locaties, evenementen, artiesten where actief = 1 LIMIT 1 OFFSET 0 ";
 $datum02 = " SELECT DATE_FORMAT(datum, '%d %M %Y') AS datum 
@@ -440,17 +418,12 @@ if ($result = $conn->query($datum010)){
 
  </article>
 
-
-
-
                                           <article class="OverEvenement-sponsor">
                                           <a href="#">mede mogelijk gemaakt door Hard Rock</a>
                                           </article>
 </div>
 </div>
 </div>
-
-
 
 
 
