@@ -1,7 +1,7 @@
 *{
     padding: 0vh 0vw;
     margin: 0vh 0vw;
-    
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 body{
@@ -264,14 +264,6 @@ body{
 }
 
 }
-
-
-
-
-
-
-
-
 
 
 @media screen and (min-width: 100px) and (max-width:768.9px) {
