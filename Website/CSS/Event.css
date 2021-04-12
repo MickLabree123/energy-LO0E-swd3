@@ -72,7 +72,7 @@ body{
 }
 
 .active {
-	background-color: #87CEEB ;
+	background-color: transparent ;
 }
 
 .OverEvenement:not(:first-child) {
@@ -117,7 +117,7 @@ body{
                                     
                                     color: paleturquoise;
                                     font-size: 27px;
-                                     margin: 2vh 0vw 0vh 37vw;
+                                     margin: 7vh 0vw 0vh 20vw;
                             }             
 
 
