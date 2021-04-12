@@ -1,11 +1,13 @@
 *{
     padding: 0vh 0vw;
     margin: 0vh 0vw;
+    
 }
 
 body{
     padding: 0vh 0vw;
     margin: 0vh 0vw;
+    background-color: #84b3e6;
 }
 
 @media screen and (min-width: 769px) {
@@ -28,7 +30,7 @@ body{
 
 } 
 .right {
-    background-color:khaki;
+    background-color:#393D6A;
     flex: 72%;
     width: 0%;
     padding-bottom: 0vh;
@@ -85,7 +87,7 @@ body{
     height: 65%;
     position: fixed;
     z-index: 1;
-    background-color: khaki;
+    background-color: #4d55c9;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -198,11 +200,11 @@ body{
 }
 .homepage-webNav button{
     font-size: 1.3rem;
-    background-color: white;
+    background-color: #5591d3;;
     color: #3f48cc;
     border: none;
     margin-left: 3vw;
-    background-color: antiquewhite;
+    
     width: 10vw;
     height: 9vh;
     border-radius: 25%;
@@ -211,7 +213,7 @@ body{
 .contact{ margin-right: 5vw;}
 
 .homepage-webNav button:hover {
-    color: antiquewhite;
+    color: #5591d3;;
     background-color: #3f48cc; 
     cursor: pointer;
 } 
