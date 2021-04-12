@@ -18,11 +18,9 @@
 </head>
 <body>
 
-<style> 
-<?php include "..\CSS\Event.css"; ?>
-</style>
 
 
+<!--
 <?php
 $host = "localhost";
 $user = "root";
@@ -135,8 +133,8 @@ if ($result = $conn->query($datum01)){
 
 
 
-/**/
-?>
+/*
+
 
 
 
@@ -300,7 +298,7 @@ if ($result = $conn->query($datum01)){
 
 
 
-
+?>
 
 
 

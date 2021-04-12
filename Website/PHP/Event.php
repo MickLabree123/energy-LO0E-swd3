@@ -49,70 +49,70 @@ $locatie010 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 9 ";
 /* Locatie 1 */
 if ($result = $conn->query($locatie01)){
   while ($row = $result->fetch_array()){
-    $locatie1 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
+    $locatie1 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 2 */
 if ($result = $conn->query($locatie02)){
   while ($row = $result->fetch_array()){
-    $locatie2 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
+    $locatie2 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 3 */
 if ($result = $conn->query($locatie03)){
   while ($row = $result->fetch_array()){
-    $locatie3 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
+    $locatie3 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 4 */
 if ($result = $conn->query($locatie04)){
   while ($row = $result->fetch_array()){
-    $locatie4 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
+    $locatie4 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 5 */
 if ($result = $conn->query($locatie05)){
   while ($row = $result->fetch_array()){
-    $locatie5 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
+    $locatie5 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 6 */
 if ($result = $conn->query($locatie06)){
   while ($row = $result->fetch_array()){
-    $locatie6 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
+    $locatie6 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 7 */
 if ($result = $conn->query($locatie07)){
   while ($row = $result->fetch_array()){
-    $locatie7 = "<section class= qwerty>".$row[0]."  ".$row[1]."</section>";
+    $locatie7 = "<section class= qwerty>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 8 */
 if ($result = $conn->query($locatie08)){
   while ($row = $result->fetch_array()){
-    $locatie8 = "<section class= qwerty>".$row[0]."   ".$row[1]."</section>";
+    $locatie8 = "<section class= qwerty>".$row[0]."   "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 9 */
 if ($result = $conn->query($locatie09)){
   while ($row = $result->fetch_array()){
-    $locatie9 = "<section class= locatie>".$row[0]."  ".$row[1]."</section>";
+    $locatie9 = "<section class= locatie>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
 /* Locatie 10 */
 if ($result = $conn->query($locatie010)){
   while ($row = $result->fetch_array()){
-    $locatie10 = $row[0]."  ".$row[1];
+    $locatie10 = "<section class= locatie>".$row[0]."  "." || "."  ".$row[1]."</section>";
   } $result->close();
 } else { echo"verlopen";}
 
@@ -178,7 +178,7 @@ if ($result = $conn->query($datum01)){
    <li><a> <button data-number="6"class="locatie6 selectSection"  href="#" onclick="openNav()"><?php echo $locatie6?></button></a></li>  
    <li><a> <button data-number="7"class="locatie7 selectSection"  href="#" onclick="openNav()"><?php echo $locatie7?></button></a></li>
    <li><a> <button data-number="8"class="locatie8 selectSection"  href="#" onclick="openNav()"><?php echo $locatie8?></button></a></li>
-   <li><a> <button data-number="9"class="locatie9 selectSection"  href="#" onclick="openNav()"><?php echo $locatie9?></button></a></li>
+   <li><a> <button data-number="9"class="locatie9 selectSection"  href="#" onclick="openNav9()"><?php echo $locatie9?></button></a></li>
    <li><a> <button data-number="10"class="locatie10 selectSection" href="#" onclick="openNav()"><?php echo $locatie10?></button></a></li>
         </ul>
    </div>
@@ -193,15 +193,24 @@ if ($result = $conn->query($datum01)){
     <div id="InfoOverEvenement1" class="OverEvenement">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
     <div class="OverEvenement-text">
-      <article>
+     
+
+      <article class="OverEvenement-locatie">
+               <h2><?php echo $locatie1?></h2>
+      </article>
+
         <h2>Artiesten</h2>
         <p></p>
         <a href="#">AAAAAAAAA</a>
-      </article>
+    
       <a href="#">AAAAAAAAA</a>
       <a href="#">BBBBBBBBB</a>
       <a href="#">xxxxxxxxxxx</a>
       <a href="#">xxxxxxxxxxxx</a>
+
+          <article>
+          <a href="#">georganiseerd door Hard Rock</a>
+          </article>
     </div>
     </div>
     </div>
@@ -211,7 +220,10 @@ if ($result = $conn->query($datum01)){
   <div id="InfoOverEvenement2" class="OverEvenement" >
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
     <div class="OverEvenement-text">
-      <article>
+      <article class="OverEvenement-locatie">
+      <h2><?php echo $locatie2?></h2>
+      </article>
+
         <h2>Artiesten</h2>
         <p></p>
         <a href="#">bbbbbbbbbbbbbbb</a>
@@ -227,8 +239,12 @@ if ($result = $conn->query($datum01)){
   <!--event 3-->
   <div class="content" data-number="3">
   <div id="InfoOverEvenement3" class="OverEvenement" >
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
     <div class="OverEvenement-text">
+    <article class="OverEvenement-locatie">
+      <h2><?php echo $locatie3?></h2>
+      </article>
+
       <article>
         <h2>Artiesten</h2>
         <p></p>
@@ -245,8 +261,12 @@ if ($result = $conn->query($datum01)){
   <!--event 4-->
   <div class="content" data-number="4">
   <div id="InfoOverEvenement4" class="OverEvenement" >
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
     <div class="OverEvenement-text">
+    <article class="OverEvenement-locatie">
+      <h2><?php echo $locatie4?></h2>
+      </article>
+
       <article>
         <h2>Artiesten</h2>
         <p></p>
@@ -263,8 +283,12 @@ if ($result = $conn->query($datum01)){
   <!--event 5-->
   <div class="content" data-number="5">
   <div id="InfoOverEvenement5" class="OverEvenement" >
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
     <div class="OverEvenement-text">
+    <article class="OverEvenement-locatie">
+      <h2><?php echo $locatie5?></h2>
+      </article>
+
       <article>
         <h2>Artiesten</h2>
         <p></p>
@@ -281,8 +305,12 @@ if ($result = $conn->query($datum01)){
   <!--event 6-->
   <div class="content" data-number="6">
   <div id="InfoOverEvenement6" class="OverEvenement" >
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
     <div class="OverEvenement-text">
+    <article class="OverEvenement-locatie">
+      <h2><?php echo $locatie6?></h2>
+      </article>
+
       <article>
         <h2>Artiesten</h2>
         <p></p>
@@ -299,8 +327,12 @@ if ($result = $conn->query($datum01)){
 <!--event 7-->
 <div class="content" data-number="7">
   <div id="InfoOverEvenement7" class="OverEvenement">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
     <div class="OverEvenement-text">
+    <article class="OverEvenement-locatie">
+      <h2><?php echo $locatie7?></h2>
+      </article>
+
       <article>
         <h2>Artiesten</h2>
         <p></p>
@@ -317,8 +349,11 @@ if ($result = $conn->query($datum01)){
 <!--event 8-->
 <div class="content" data-number="8">
   <div id="InfoOverEvenement8" class="OverEvenement" >
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
     <div class="OverEvenement-text">
+    <article class="OverEvenement-locatie">
+      <h2><?php echo $locatie8?></h2>
+      </article>
       <article>
         <h2>Artiesten</h2>
         <p></p>
@@ -333,10 +368,15 @@ if ($result = $conn->query($datum01)){
   </div>
 
 <!--event 9-->
-<div class="content" data-number="9">
+<div id="www" class="content" data-number="9">
   <div id="InfoOverEvenement9" class="OverEvenement">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</a>
     <div class="OverEvenement-text">
+
+        <article class="OverEvenement-locatie">
+                  <h2><?php echo $locatie9?></h2>
+        </article>
+
       <article>
         <h2>Artiesten</h2>
         <p></p>
@@ -353,8 +393,12 @@ if ($result = $conn->query($datum01)){
 <!--event 10-->
 <div class="content" data-number="10">
 <div id="InfoOverEvenement10" class="OverEvenement">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNa10v()">&times;</a>
     <div class="OverEvenement-text">
+    <article class="OverEvenement-locatie">
+      <h2><?php echo $locatie10?></h2>
+      </article>
+
       <article>
         <h2>Artiesten</h2>
         <p></p>
@@ -368,18 +412,21 @@ if ($result = $conn->query($datum01)){
   </div>
   </div>
 
+  <!--Events-->
   <div class="content" data-number="0">
-<div id="InfoOverEvenement0" class="OverEvenement">
-    <div  id=class="OverEvenement-text">
+<div id="InfoOverEvenement0" class="OverEvenement ExtraEvenement">
+    <div class="ExtraEvenement-text">
       <article>
         <h2>Vind jouw event hier</h2>
         <p></p>
-        <a href="#">xxxxxxxxxxxxx</a>
+        <a href="#">De best artiesten </a>
       </article>
       <a href="#">xxxxxxxxxxxxx</a>
       <a href="#">xxxxxxxxxxxx</a>
       <a href="#">xxxxxxxxxxxx</a>
-      <a href="#">xxxxxxxxxxxxxxx</a>
+      <article>
+      <a href="#">georganiseerd door Hard Rock</a>
+      </article>
     </div>
   </div>
   </div>
