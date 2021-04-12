@@ -22,7 +22,6 @@
 </style>
 
 
-
 <?php
 $host = "localhost";
 $user = "root";
@@ -36,7 +35,7 @@ if ($conn->connect_error){
 
 
 /* Alle Locaties */
-$locatie01 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0";
+$locatie01 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 0 ";
 $locatie02 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 1 ";
 $locatie03 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 2 ";
 $locatie04 ="SELECT plaatsnaam, gebouw FROM locaties LIMIT 1 OFFSET 3 ";
@@ -125,11 +124,10 @@ if ($result = $conn->query($locatie010)){
 
 
 
+
+
+/*
 $datum01="SELECT datum FROM evenementen LIMIT 1 ";
-
-
-
-
 
 
 if ($result = $conn->query($datum01)){
@@ -137,7 +135,7 @@ if ($result = $conn->query($datum01)){
     $datum01 = "<section class= qwerty>".$row[0]."</section>";
   } $result->close();
 } else { echo"verlopen";}
-
+*/
 
 
 
@@ -158,7 +156,7 @@ if ($result = $conn->query($datum01)){
             <a href="#"><button>Events</button></a>
             <a href="#"><button>Acties</button></a>
             <a href="artiesten.php"><button>Artiesten</button></a>
-            <a href="#"><button>Contact</button></a>
+            <a class ="contact" href="#"><button>Contact</button></a>
         </article>
         <article class="homepage-dropDownIcon">
             <p id="homepage-dropdown-btn">&#9776;</p>
@@ -166,75 +164,283 @@ if ($result = $conn->query($datum01)){
     </header>
 
 
-
-
-
 <section id="EventZoeken">
-
 <section class="Evenementen">
    <div class="left">
-      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="locatie">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="locatie" />
+
        <ul id="Locatie">
-   <li><a class="locatie 1"  href="#" onclick="openNav()"><?php echo $locatie1.$datum01?></a></li>
-   <li><a class="locatie 2"  href="#" onclick="openNav()"><?php echo $locatie2?></a></li>
-   <li><a class="locatie 3"  href="#" onclick="openNav()"><?php echo $locatie3?></a></li>
-   <li><a class="locatie 4"  href="#" onclick="openNav()"><?php echo $locatie4?></a></li>
-   <li><a class="locatie 5"  href="#" onclick="openNav()"><?php echo $locatie5?></a></li>
-   <li><a class="locatie 6"  href="#" onclick="openNav()"><?php echo $locatie6?></a></li>  
-   <li><a class="locatie 7"  href="#" onclick="openNav()"><?php echo $locatie7?></a></li>
-   <li><a class="locatie 8"  href="#" onclick="openNav()"><?php echo $locatie8?></a></li>
-   <li><a class="locatie 9"  href="#" onclick="openNav()"><?php echo $locatie9?></a></li>
-   <li><a class="locatie 10" href="#" onclick="openNav()"><?php echo $locatie10?></a></li>
+   <li><a> <button data-number="1" class="locatie1 selectSection active"  href="#" onclick="openNav()"><?php echo $locatie1?></button></a></li>
+   <li><a> <button data-number="2" class="locatie2 selectSection"   href="#" onclick="openNav()"><?php echo $locatie2?></button></a></li>
+   <li><a> <button data-number="3" class="locatie3 selectSection"   href="#" onclick="openNav()"><?php echo $locatie3?></button></a></li>
+   <li><a> <button data-number="4"class="locatie4 selectSection"  href="#" onclick="openNav()"><?php echo $locatie4?></button></a></li>
+   <li><a> <button data-number="5"class="locatie5 selectSection"  href="#" onclick="openNav()"><?php echo $locatie5?></button></a></li>
+   <li><a> <button data-number="6"class="locatie6 selectSection"  href="#" onclick="openNav()"><?php echo $locatie6?></button></a></li>  
+   <li><a> <button data-number="7"class="locatie7 selectSection"  href="#" onclick="openNav()"><?php echo $locatie7?></button></a></li>
+   <li><a> <button data-number="8"class="locatie8 selectSection"  href="#" onclick="openNav()"><?php echo $locatie8?></button></a></li>
+   <li><a> <button data-number="9"class="locatie9 selectSection"  href="#" onclick="openNav()"><?php echo $locatie9?></button></a></li>
+   <li><a> <button data-number="10"class="locatie10 selectSection" href="#" onclick="openNav()"><?php echo $locatie10?></button></a></li>
         </ul>
    </div>
 
-  <article class="right">
-  <div id="InfoOverEvenement" class="OverEvenement">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="right">
+  <div class="contentSection">
+
+
+
+    <!--event 1-->
+    <div class="content" data-number="1">
+    <div id="InfoOverEvenement1" class="OverEvenement">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
     <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">AAAAAAAAA</a>
+      </article>
       <a href="#">AAAAAAAAA</a>
       <a href="#">BBBBBBBBB</a>
-      <a href="#">CCCCCCCCCCC</a>
-      <a href="#">DDDDDDDDDDDD</a>>
+      <a href="#">xxxxxxxxxxx</a>
+      <a href="#">xxxxxxxxxxxx</a>
+    </div>
+    </div>
+    </div>
+
+<!--event 2-->
+  <div class="content" data-number="2">
+  <div id="InfoOverEvenement2" class="OverEvenement" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">bbbbbbbbbbbbbbb</a>
+      </article>
+      <a href="#">aaaabbbbbbbbbaaaaa</a>
+      <a href="#">aaaabbbbbbbbbbaaaaa</a>
+      <a href="#">aaaabbbbbbbbbaaaaaaaaaa</a>
+      <a href="#">aaaaaabbbbbbbaaaaa</a>
+    </div>
+</div>
+  </div>
+
+  <!--event 3-->
+  <div class="content" data-number="3">
+  <div id="InfoOverEvenement3" class="OverEvenement" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">aaaaaaaaaaaa</a>
+      </article>
+      <a href="#">33333333333</a>
+      <a href="#">33333333333</a>
+      <a href="#">3333333333333</a>
+      <a href="#">333333333333333</a>
+    </div>
+</div>
+  </div>
+
+  <!--event 4-->
+  <div class="content" data-number="4">
+  <div id="InfoOverEvenement4" class="OverEvenement" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">44444444444444444</a>
+      </article>
+      <a href="#">444444444444444</a>
+      <a href="#">44444444444444444</a>
+      <a href="#">44444444444444444</a>
+      <a href="#">44444444444444444444</a>
     </div>
   </div>
-  </article>
+  </div>
+
+  <!--event 5-->
+  <div class="content" data-number="5">
+  <div id="InfoOverEvenement5" class="OverEvenement" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">55555555555555</a>
+      </article>
+      <a href="#">555555555555555</a>
+      <a href="#">55555555555555</a>
+      <a href="#">5555555555555555</a>
+      <a href="#">5555555555555555</a>
+    </div>
+  </div>
+  </div>
+
+  <!--event 6-->
+  <div class="content" data-number="6">
+  <div id="InfoOverEvenement6" class="OverEvenement" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">6666666666666666</a>
+      </article>
+      <a href="#">66666666666666666</a>
+      <a href="#">6666666666666666666</a>
+      <a href="#">666666666666666</a>
+      <a href="#">666666666666666</a>
+    </div>
+  </div>
+  </div>
+
+<!--event 7-->
+<div class="content" data-number="7">
+  <div id="InfoOverEvenement7" class="OverEvenement">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">777777777777</a>
+      </article>
+      <a href="#">777777777777777</a>
+      <a href="#">777777777777</a>
+      <a href="#">77777777777</a>
+      <a href="#">777777777777777</a>
+    </div>
+  </div>
+  </div>
+
+<!--event 8-->
+<div class="content" data-number="8">
+  <div id="InfoOverEvenement8" class="OverEvenement" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">88888888888</a>
+      </article>
+      <a href="#">88888888888</a>
+      <a href="#">88888888888888888</a>
+      <a href="#">8888888888888888</a>
+      <a href="#">888888888888888</a>
+    </div>
+  </div>
+  </div>
+
+<!--event 9-->
+<div class="content" data-number="9">
+  <div id="InfoOverEvenement9" class="OverEvenement">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">999999999999</a>
+      </article>
+      <a href="#">9999999999999999</a>
+      <a href="#">999999999999999</a>
+      <a href="#">999999999999999</a>
+      <a href="#">99999999999999</a>
+    </div>
+  </div>
+  </div>
+
+<!--event 10-->
+<div class="content" data-number="10">
+<div id="InfoOverEvenement10" class="OverEvenement">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="OverEvenement-text">
+      <article>
+        <h2>Artiesten</h2>
+        <p></p>
+        <a href="#">0000000000</a>
+      </article>
+      <a href="#">000000000</a>
+      <a href="#">00000000000</a>
+      <a href="#">000000000000</a>
+      <a href="#">000000000000</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="content" data-number="0">
+<div id="InfoOverEvenement0" class="OverEvenement">
+    <div  id=class="OverEvenement-text">
+      <article>
+        <h2>Vind jouw event hier</h2>
+        <p></p>
+        <a href="#">xxxxxxxxxxxxx</a>
+      </article>
+      <a href="#">xxxxxxxxxxxxx</a>
+      <a href="#">xxxxxxxxxxxx</a>
+      <a href="#">xxxxxxxxxxxx</a>
+      <a href="#">xxxxxxxxxxxxxxx</a>
+    </div>
+  </div>
+  </div>
+
+
+          <script>
+                  let Buttons = document.querySelectorAll(".selectSection");
+                  for (let button of Buttons){
+                    button.addEventListener('click', (e) => {
+          
+                    const et = e.target;
+                    const active = document.querySelector(".active");
+                    if(active){
+                      active.classList.remove("active");
+                    }
+
+                    et.classList.add("active");
+                    let allContent = document.querySelectorAll('.content');
+
+                    for(let content of allContent){
+                    if(content.getAttribute('data-number') === button.getAttribute('data-number')) {
+                       content.style.display = "block";
+                    } else {
+                      content.style.display = "none";
+                    }
+                    }
+                    });
+                  }
+          </script> 
+
+</div>
+</div>
+</section>
 </section>
 
-</section>
 
 
 
-
-
-
+<footer id="homepage-footer">
+  <section id="socialMedia-homepage">
+    <nav class="homepageEventLink">
+      <a href="#">Events</a>
+    </nav>
+    <nav class="homepage-socialMediaLink">
+      <ul class="homepage-socialLinkList">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-youtube"></a></li>
+      </ul>
+    </nav>
+  </section>
+  <section class="contact-homepage">
+    <h1>Neem contact op</h1>
+    <p>tel: +31 612345678</p>
+    <p>email: rockhard.contact@gmail.nl</p>
+  </section>
+</footer>
 
 
 </body>
-
-<footer id="homepage-footer">
-        <section id="socialMedia-homepage">
-            <nav class="homepageEventLink">
-                <a href="#">Events</a>
-            </nav>
-            <nav class="homepage-socialMediaLink">
-                <ul class="homepage-socialLinkList">
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-instagram"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-youtube"></a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="contact-homepage">
-            <h1>Neem contact op</h1>
-            <p>tel: +31 612345678</p>
-            <p>email: rockhard.contact@gmail.nl</p>
-        </section>
-    </footer>
-
-
-
 </html>
 
 
