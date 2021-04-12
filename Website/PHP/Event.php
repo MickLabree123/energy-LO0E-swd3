@@ -4,7 +4,7 @@
     <meta http-equiv="language" content="NL"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="energydrink">
-    <meta name="author" content="sathyam">
+    <meta name="author" content="sathyam, Anayawa, Mick, Max">
     <meta name="keywords" content="Rock hard, energy, drink, event">
     <title>Rock Hard</title>
     <link rel="stylesheet" type="text/css" href="..\CSS\Event.css">

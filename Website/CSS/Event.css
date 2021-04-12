@@ -33,8 +33,7 @@ body{
     background-color:#393D6A;
     flex: 72%;
     width: 0%;
-    padding-bottom: 0vh;
-    
+    padding-bottom: 0vh;   
 
 }
 
@@ -43,6 +42,7 @@ body{
     font-size: 18px;
     padding: 11px;
     border: 1px solid rgb(4, 115, 143);
+    background-color: #5591d3; 
 }
 #Locatie {
     list-style-type: none;
@@ -200,8 +200,8 @@ body{
 }
 .homepage-webNav button{
     font-size: 1.3rem;
-    background-color: #5591d3;;
-    color: #3f48cc;
+    background-color: #393D6A; 
+    color: #5591d3; 
     border: none;
     margin-left: 3vw;
     
@@ -213,8 +213,8 @@ body{
 .contact{ margin-right: 5vw;}
 
 .homepage-webNav button:hover {
-    color: #5591d3;;
-    background-color: #3f48cc; 
+    color: #393D6A;  
+    background-color: #5591d3; 
     cursor: pointer;
 } 
 .homepage-dropDownIcon {
