@@ -25,7 +25,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = "";
+$pass = "root";
 $database = "energy";
 $conn = new mysqli($host, $user, $pass, $database);
 if ($conn->connect_error){
