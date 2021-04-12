@@ -29,7 +29,6 @@
             <a href="Event.php"><button>Events</button></a>
             <a href="Actiepagina.php"><button>Acties</button></a>
             <a href="artiesten.php"><button>Artiesten</button></a>
-            <a href="#"><button>Contact</button></a>
         </article>
 
 <!-- hamburger menu -->
@@ -40,7 +39,6 @@
         <li><a href="Event.php">Events</a></li>
         <li><a href="Actiepagina.php">Acties</a></li>
         <li><a href="artiesten.php">Artiesten</a></li>
-        <li><a href="#">Contact</a></li>
     </div>
 </header>
 
@@ -71,7 +69,7 @@
 
     <div class="container">
         <div style="text-align:center">
-        <h2>Neem contact met ons!!</h2>
+        <h2>Neem contact op met ons!!</h2>
         <p>Kom langs bij ons bedrijf of laat een bericht ach:</p>
         </div>
         <div class="row">

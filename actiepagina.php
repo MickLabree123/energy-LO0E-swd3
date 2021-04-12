@@ -18,18 +18,16 @@
             <a href="Event.php"><button>Events</button></a>
             <a href="Actiepagina.php"><button>Acties</button></a>
             <a href="artiesten.php"><button>Artiesten</button></a>
-            <a href="#"><button>Contact</button></a>
         </article>
 
 <!-- hamburger menu -->
         <a href="#" id="openbtn" onclick="openBtn()"><i class="fas fa-bars"></i></a>
         <div id="menu" class="menu">
         <a href="#" class="closebtn" onclick="closeBtn()"><i class="fas fa-times"></i></a>
-        <li><a href="homepagina.php">Home</a></li>
+        <li><a href="homepage.php">Home</a></li>
         <li><a href="Event.php">Events</a></li>
         <li><a href="Actiepagina.php">Acties</a></li>
         <li><a href="artiesten.php">Artiesten</a></li>
-        <li><a href="#">Contact</a></li>
     </div>
 </header>
 <section class="text">

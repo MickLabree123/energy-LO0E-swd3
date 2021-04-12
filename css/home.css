@@ -9,8 +9,113 @@
     body {
         width: 90vw;
         margin: auto;
-
     }
+
+    header{
+        width: 100vw;
+        height: 95px;
+        background-color: #393D6A;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .logo{
+        height: 90px;
+        
+    }
+
+    .menu{
+        width: 0vw;
+        height: 100vh;
+        background-color: #393D6A;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        transition: all 250ms;
+        z-index: 1;
+        list-style: none;
+    }
+
+    .menu li a{
+        color: white;
+        font-size: 30px;
+        line-height: 5rem;
+        padding: 15px 10px;
+        border-radius: 10px;
+        transition: all 250ms;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu li a:active{
+        background-color: #5591d3;
+    }
+    .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        padding: 14px 25px;
+        font-size: 36px;
+        color: white;
+        border-radius: 10px;
+        transition: all 250ms;
+    }
+
+    .closebtn:active{
+        background-color: #5591d3;
+    }
+
+    #openbtn{
+        float: right;
+        margin-top: 3vh;
+        margin-right: 5vw;
+        font-size: 30px;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+
+    #openbtn:active{
+        background-color: #5591d3;
+    }
+    
+    .text{
+        margin-top: 10vh;
+        text-align: center;
+    }
+    
+    html,body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #homepage-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3vh;
+    }
+    .homepage-logo {
+        margin-left: 3vw;
+    }
+    
+    .homepage-webNav button{
+        display: none;
+    }
+    .homepage-webNav button:hover {
+        color: #393D6A;
+        background-color: #5591d3; 
+        cursor: pointer;
+    } 
+    .homepage-dropDownIcon {
+        display: none;
+    }
+
     /* header */
     #homepage-header {
         height: 15vh;
@@ -116,7 +221,17 @@
     }
     /* header */
 
-    
+    #menu {
+        display: none;
+    }
+
+    .container {
+        margin-top: 5vh;
+    }
+
+    #openbtn {
+        display: none;
+    }
 
     #homepage-header {
         display: flex;
