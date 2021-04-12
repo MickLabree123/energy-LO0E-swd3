@@ -7,8 +7,8 @@
     <meta name="author" content="sathyam, Anayawa, Mick, Max">
     <meta name="keywords" content="Rock hard, energy, drink, event">
     <title>Rock Hard</title>
-    <link rel="stylesheet" type="text/css" href="..\CSS\Event.css">
-    <script src="..\JavaScript\Event.js"></script>
+    <link rel="stylesheet" type="text/css" href="css\Event.css">
+    <script src="JS\Event.js"></script>
     <script src="..\Website\energy.sql"></script>
     <!-- google fonts -->
  <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +18,7 @@
 <body>
 
 <style> 
-<?php include "..\CSS\Event.css"; ?>
+<?php include "css\Event.css"; ?>
 </style>
 
 
@@ -294,7 +294,7 @@ if ($result = $conn->query($datum010)){
 <!------------------------------------------------------------------------------------------>
 <header id="homepage-header">
         <article class="homepage-logo">
-            <img src="..\Images\logo.png" height="100" alt="rockhard energy">
+            <img src="img\logo.png" height="100" alt="rockhard energy">
         </article>
         <article class="homepage-webNav">
             <a href="homepage.php"><button>Home</button></a>
